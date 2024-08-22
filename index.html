@@ -10,6 +10,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-straight/css/uicons-bold-straight.css'>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-straight/css/uicons-bold-straight.css'>
     <script>
         tailwind.config = {
           theme: {
@@ -30,6 +31,7 @@
                 'text-secndary': '#494949',
                 'text-thard': '#1C1C1C',
                 'text-forth': '#A0A0A0',
+                'text-forth': '#737373',
               }
             }
           }
@@ -44,26 +46,81 @@
     <title>Rinterio-Architect</title>
 </head>
 <body class="font-primary">
-    <header>
-        <nav>
-
-        </nav>
-        <section>
-            <div>
-                <img src="Images/banner.png" alt="">
-                <h1>A barn house of this design has a striking appearance</h1>
-                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <button>
-                   <div>
-                    <span> View Details</span>
-                   </div>
-                    <div>
-                        <i class="fi fi-bs-arrow-up-right"></i>
+    <section class="bg-[#F6F6F6]">
+        <header class="w-10/12 m-auto ">
+            <nav class="flex justify-between ">
+                <div class="navbar">
+                    <div class="navbar-start">
+                      <a href="#" class="btn btn-ghost">
+                        <div class="flex justify-center items-center">
+                            <div class="h-8 w-8 rounded-full flex bg-color-primary text-center items-center justify-center"><i class="fi fi-bs-arrow-up-right"></i></div>
+                          <div class=" text-3xl font-extrabold ml-3">Rinterio</div>
+                          </div>
+                      </a>
                     </div>
-                </button>
-            </div>
-        </section>
-    </header>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-extrabold text-text-secndary">Home</a></li>
+                        <li><a class="text-text-forth">Services</a></li>
+                        <li><a class="text-text-forth">Protfolio</a></li>
+                        <li><a class="text-text-forth">Blogs</a></li>
+                        <li><a class="text-text-forth">Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end ">
+                        <div  class="hidden lg:block">
+                           <a href="#">
+                            <i class="fa-solid fa-magnifying-glass mr-3  bg-white rounded-full p-3"></i>
+                           </a>
+                            <a href="">
+                                <i class="fa-solid fa-cart-shopping mr-4  bg-white rounded-full p-3"></i>
+                            </a>
+                            <a href="#" class="btn btn-ghost bg-color-primary rounded-3xl">
+                                <div class="flex justify-center items-center">
+                                    <div class=" text-xl font-extrabold mr-2">Book Consult</div>
+                                    <div class="h-8 w-8 rounded-full flex bg-thard-bg text-white text-center items-center justify-center"><i class="fi fi-bs-arrow-up-right"></i></div>
+                                  </div>
+                              </a>
+                        </div>
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <ul
+                              tabindex="0"
+                              class="menu right-0 menu-sm dropdown-content bg-gradient-to-r
+                            from-[rgb(255,255,255)] to-[rgba(255,255,255)] rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="font-extrabold text-text-secndary">Home</a></li>
+                            <li><a class="text-text-forth">Services</a></li>
+                            <li><a class="text-text-forth">Protfolio</a></li>
+                            <li><a class="text-text-forth">Blogs</a></li>
+                            <li><a class="text-text-forth">Contact Us</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                  </div>
+            </nav>
+            <section class="bg-[#F6F6F6] text-center items-center pb-20 mb-20">
+                <div>
+                    <div class="flex justify-center items-center">
+                        <img src="Images/banner.png" alt="">
+                    </div>
+                    <h1 class="font-extrabold lg:text-6xl text-3xl text-text-primary mt-7 mb-7">A barn house of this design has a striking appearance</h1>
+                    <p class="font-medium text-sm lg:text-base text-text-secndary">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.</p>
+                    <a class="flex justify-center mt-4">
+                        <button class="flex bg-color-thard rounded-3xl lg:p-4 px-12 py-2">
+                           <div>
+                            <h1 class="font-bold text-xl mr-3">View Details</h1>
+                           </div>
+                            <div>
+                                <i class="fi fi-bs-arrow-up-right h-8 w-8 rounded-full flex bg-color-primary text-center items-center justify-center"></i>
+                            </div>
+                        </button>
+                    </a>
+                </div>
+            </section>
+        </header>
+    </section>
 
     <main>
 
